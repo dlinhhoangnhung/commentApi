@@ -23,10 +23,10 @@ exports.addComment = async (req, res) => {
 exports.getAllCommentsOfPost = async (req, res) => {
     try {
         let postId = req.params.pId
-        console.log(postId);
         const comments = await Comment.find({ "postid": postId })
-        if (!comments) {
-            res.status(200).json("This post have no comment.")
+        if (comments.length == 0) {
+            res.status(200).json("This post have no comment or postId not exist.")
+            return;
         }
         res.status(200).json(comments);
     } catch (error) {
