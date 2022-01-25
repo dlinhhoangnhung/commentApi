@@ -1,11 +1,11 @@
-- install & run server: 
+1. install & run server: 
 
-npm i
-npm start
+    - npm i
+    - npm start
 
-- Test Api: 
+2. Test Api: 
 
-1. Add Comment:
+- Add Comment:
 localhost:5001/comments
 Ex:
 {
@@ -14,6 +14,6 @@ Ex:
     "userid" : "1"
 }
 
-2. Get All Comments of PostId:
+- Get All Comments of PostId:
 Ex: postid = 1
 localhost:5001/comments/comments-post/1
