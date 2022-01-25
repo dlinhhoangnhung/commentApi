@@ -1,9 +1,10 @@
-1. install & run server: 
+1. Connect MongoDb 
+2. install & run server: 
 
     - npm i
     - npm start
 
-2. Test Api: 
+3. Test Api: 
 
 - Add Comment:
 localhost:5001/comments
